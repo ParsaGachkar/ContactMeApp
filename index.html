@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ContactMe</title>
+    <style>
+            body{
+                background-color: black; color: white;font-family: 'Courier New', Courier, monospace;
+                text-align: center;
+                animation: body-fade 5s linear 2 1;
+            }
+        div{
+            width: 100%;
+            margin: auto;
+            margin-top: 25vh;
+            font-size: 3em;
+            
+        }
+        .blink{
+            display: inline-block;
+            width: 0.5em;
+            height: 0.75em;
+            background-color: white;
+            padding: 0;
+            margin: 0;
+            animation: blink-anim 0.25s ease-in-out 0 infinite;
+        }
+        @keyframes blink-anim{
+            0%{
+                background-color: #000
+            }
+            50%{
+                background-color: #fff
+            }
+            100%{
+                background-color: #000
+            }
+        }
+        @keyframes body-fade{
+            0%{opacity: 0;}
+            100%{opacity: 1;}
+        }
+        </style>
+</head>
+<body>
+
+    <div>(+98) 921 410 8118<span class="blink"></span>
+    </div>
+    <footer>Parsa Gachkar</footer>
+</body>
+</html>
