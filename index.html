@@ -7,9 +7,11 @@
     <title>ContactMe</title>
     <style>
             body{
+                
                 background-color: black; color: white;font-family: 'Courier New', Courier, monospace;
                 text-align: center;
-                animation: body-fade 5s linear 2 1;
+                opacity: 0;
+                transition: 0.5s all;
             }
         div{
             width: 100%;
@@ -49,5 +51,9 @@
     <div>(+98) 921 410 8118<span class="blink"></span>
     </div>
     <footer>Parsa Gachkar</footer>
+    <script>
+        var body = document.getElementsByTagName("BODY")[0]
+        setTimeout(()=>{body.setAttribute("style","opacity : 1;")},5000);
+    </script>
 </body>
 </html>
